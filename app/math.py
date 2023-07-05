@@ -31,13 +31,15 @@ print(div(b = 2))
   
  
 numbers = [1, 2, 3, 5, 6]  
-def multiplicar_array_por_dos(lista): 
+def multiplicar_array_por_dos(): 
     datos=[]
-    for number in lista:
+    for number in numbers:
         print(number * 2)
         datos.append(number*2)
     return datos
-print(multiplicar_array_por_dos(lista = numbers))
+print(multiplicar_array_por_dos())
+multiplicar_array_por_dos_1 = list(map(lambda number: number *2, numbers))
+print(multiplicar_array_por_dos_1)
  
 
 def mult(a = 8, b = 50):
