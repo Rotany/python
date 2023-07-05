@@ -22,6 +22,11 @@ def div(a = 40, b = 5):
 print(div() * 5)
 print(div(20, 50)*6)
 print(div(b = 2))
+try:
+  print(div(b=0))
+except ZeroDivisionError as error:
+    print('que pasa esto es un error')
+
 
 
 
